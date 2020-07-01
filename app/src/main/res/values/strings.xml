@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MUSIQUE"\n"23490_Belinda</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user">User</string>
+    <string name="login_text">Login to</string>
+    <string name="username_text">Username : </string>
+    <string name="password_text">Password : </string>
+    <string name="button_login">Let\'s go!</string>
+    <string name="title">MUSIQUE</string>
+    <string name="search_hint">Song title or Artist ..</string>
+</resources>

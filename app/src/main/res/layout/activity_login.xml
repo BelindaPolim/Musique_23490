@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".Login">
+
+        <TextView
+            android:id="@+id/textView_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_text"
+            android:textSize="20dp"
+            android:textColor="@color/colorListViewSelected"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="66dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_login"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"
+            android:layout_marginTop="46dp"
+            android:layout_below="@+id/textView_title"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:textColorHint="#707070"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:layout_below="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#707070"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:layout_below="@+id/editText_user"
+            android:layout_alignStart="@+id/editText_user"
+            android:layout_alignEnd="@+id/editText_user"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_login"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/editText_password"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
